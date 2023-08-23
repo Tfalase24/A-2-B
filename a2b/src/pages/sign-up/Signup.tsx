@@ -1,4 +1,5 @@
 import React from 'react';
+import SignUpForm from '../../components/sign-up-form/SignUpForm';
 
 const Signup = () => {
   return (
@@ -10,6 +11,8 @@ const Signup = () => {
       <div>
         After a successful submission, it will take you to the Log in Page
       </div>
+
+      <SignUpForm />
     </>
   );
 };
