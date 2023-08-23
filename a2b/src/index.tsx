@@ -11,7 +11,14 @@ const App = lazy(() => import('./App'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Suspense>
+      <Suspense
+        fallback={
+          <div>
+            This is a fall back page for when the page is taking too long to
+            load...
+          </div>
+        }
+      >
         <App />
       </Suspense>
     </BrowserRouter>
