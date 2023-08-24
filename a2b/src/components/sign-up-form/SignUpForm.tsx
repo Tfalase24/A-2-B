@@ -1,5 +1,5 @@
 import React from 'react';
-import SubmitButton from './submit-button/SubmitButton';
+import SubmitButton from '../submit-button/SubmitButton';
 
 const SignUpForm = () => {
   const handleSubmit = (event: React.FormEvent) => {
