@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface SubmitButtonProps {
+interface SubmitButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   label: string;
   onClick: (event: React.FormEvent) => void;
   disabled?: boolean;
@@ -12,7 +12,7 @@ const SubmitButton: React.FC<SubmitButtonProps> = ({
   disabled,
 }) => {
   return (
-    <button onClick={onClick} disabled={disabled}>
+    <button onClick={onClick} disabled={disabled} aria-label={label}>
       {label}
     </button>
   );
