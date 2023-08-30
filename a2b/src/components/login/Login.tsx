@@ -1,13 +1,21 @@
 import React from 'react';
+import InputTag from '../input-tag/InputTag';
 
 const LoginComponent = () => {
   return (
     <>
       <div>
-        <input placeholder="Enter Email Address..." />
+        <InputTag
+          placeholder="Enter Email Address..."
+          aria-label="Email Address Input"
+        />
       </div>
       <div>
-        <input placeholder="Enter Password..." />
+        <InputTag
+          placeholder="Enter Password..."
+          aria-label="Password Input"
+          type="password"
+        />
       </div>
     </>
   );
